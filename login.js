@@ -2,14 +2,15 @@
 
 // IMPORTANT: Paste your own firebaseConfig object here
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// ADD THIS INSTEAD:
 const firebaseConfig = {
-  apiKey: "AIzaSyCJDXlSxOBCVtnesCol7Ue68tWtPjI05w8",
-  authDomain: "attendance-system-9f359.firebaseapp.com",
-  projectId: "attendance-system-9f359",
-  storageBucket: "attendance-system-9f359.firebasestorage.app",
-  messagingSenderId: "73469437717",
-  appId: "1:73469437717:web:9aae277e91ebf66969ab1c",
-  measurementId: "G-LXNSVSL3FT"
+  apiKey: import.meta.env.VITE_API_KEY,
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_APP_ID,
+  measurementId: import.meta.env.VITE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
