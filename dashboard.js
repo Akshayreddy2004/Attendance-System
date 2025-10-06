@@ -1,15 +1,6 @@
 // This is the script for the dashboard page
 
 // IMPORTANT: Paste your own firebaseConfig object here
-const firebaseConfig = {
-  apiKey: "AIzaSyCJDXlSxOBCVtnesCol7Ue68tWtPjI05w8",
-  authDomain: "attendance-system-9f359.firebaseapp.com",
-  projectId: "attendance-system-9f359",
-  storageBucket: "attendance-system-9f359.firebasestorage.app",
-  messagingSenderId: "73469437717",
-  appId: "1:73469437717:web:9aae277e91ebf66969ab1c",
-  measurementId: "G-LXNSVSL3FT"
-};
 // Initialize Firebase
 const app = firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
