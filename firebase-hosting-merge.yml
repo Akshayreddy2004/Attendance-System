@@ -8,11 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Create config.js from GitHub Secret
-        run: echo "${{ secrets.FIREBASE_CONFIG }}" > config.js
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_ATTENDANCE_SYSTEM_9F359 }}'
           channelId: live
           projectId: attendance-system-9f359
+          # THIS IS THE NEW, IMPORTANT LINE:
+          config: '${{ secrets.FIREBASE_CONFIG_JSON }}'
